@@ -43,7 +43,7 @@
               "attrs": [
                 {
                   "name": "кодКарты",
-                  "caption": "",
+                  "caption": "Номер карты",
                   "hidden": false,
                   "index": 2
                 }
@@ -67,7 +67,7 @@
           ],
           "index": 0,
           "type": "standard",
-          "caption": "Регистр гостей",
+          "caption": "Гость",
           "name": "регистрГостей",
           "relatedTo": "i-i-s-probasem-регистр-гостей",
           "inverse": null

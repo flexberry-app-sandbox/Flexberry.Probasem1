@@ -47,7 +47,7 @@ export let defineProjections = function (modelClass) {
     датаРождения: attr('Дата рождения', { index: 1 }),
     телефон: attr('Телефон', { index: 2 }),
     должность: belongsTo('i-i-s-probasem-должность', 'Должность', {
-      наимДолжности: attr('Должность', { index: 4 }),
+      наимДолжности: attr('Должность', { index: 4, hidden: true }),
       карта: belongsTo('i-i-s-probasem-карта', '', {
         кодКарты: attr('', { index: 5 })
       }, { index: -1, hidden: true })

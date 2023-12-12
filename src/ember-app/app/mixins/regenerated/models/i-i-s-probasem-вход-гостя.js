@@ -28,10 +28,10 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ВходГостяE', 'i-i-s-probasem-вход-гостя', {
-    регистрГостей: belongsTo('i-i-s-probasem-регистр-гостей', 'Регистр гостей', {
+    регистрГостей: belongsTo('i-i-s-probasem-регистр-гостей', 'Гость', {
       фИО: attr('ФИО', { index: 1, hidden: true }),
       карта: belongsTo('i-i-s-probasem-карта', '', {
-        кодКарты: attr('', { index: 2 })
+        кодКарты: attr('Номер карты', { index: 2 })
       }, { index: -1, hidden: true })
     }, { index: 0, displayMemberPath: 'фИО' })
   });

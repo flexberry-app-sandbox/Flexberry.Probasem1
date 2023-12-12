@@ -30,9 +30,9 @@ namespace IIS.Probasem
     [Caption("Вход гостя")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ВходГостяE", new string[] {
-            "РегистрГостей as \'Регистр гостей\'",
+            "РегистрГостей as \'Гость\'",
             "РегистрГостей.ФИО as \'ФИО\'",
-            "РегистрГостей.Карта.КодКарты"}, Hidden=new string[] {
+            "РегистрГостей.Карта.КодКарты as \'Номер карты\'"}, Hidden=new string[] {
             "РегистрГостей.ФИО"})]
     [MasterViewDefineAttribute("ВходГостяE", "РегистрГостей", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     public class ВходГостя : ICSSoft.STORMNET.DataObject

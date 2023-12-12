@@ -33,7 +33,7 @@ namespace IIS.Probasem
             "Сотрудник as \'Сотрудник\'",
             "Сотрудник.ФИО as \'ФИО\'",
             "Сотрудник.Должность.НаимДолжности as \'Должность\'",
-            "Сотрудник.Должность.Карта.КодКарты"}, Hidden=new string[] {
+            "Сотрудник.Должность.Карта.КодКарты as \'Номер карты\'"}, Hidden=new string[] {
             "Сотрудник.ФИО"})]
     [MasterViewDefineAttribute("ВходСотрудникаE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     public class ВходСотрудника : ICSSoft.STORMNET.DataObject
