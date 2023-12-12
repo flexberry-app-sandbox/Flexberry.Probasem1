@@ -49,7 +49,7 @@ export let defineProjections = function (modelClass) {
     должность: belongsTo('i-i-s-probasem-должность', 'Должность', {
       наимДолжности: attr('Должность', { index: 4, hidden: true }),
       карта: belongsTo('i-i-s-probasem-карта', '', {
-        кодКарты: attr('', { index: 5 })
+        кодКарты: attr('Номер карты', { index: 5 })
       }, { index: -1, hidden: true })
     }, { index: 3, displayMemberPath: 'наимДолжности' })
   });

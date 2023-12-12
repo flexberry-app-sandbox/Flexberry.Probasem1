@@ -34,7 +34,7 @@ namespace IIS.Probasem
             "Телефон as \'Телефон\'",
             "Должность as \'Должность\'",
             "Должность.НаимДолжности as \'Должность\'",
-            "Должность.Карта.КодКарты"}, Hidden=new string[] {
+            "Должность.Карта.КодКарты as \'Номер карты\'"}, Hidden=new string[] {
             "Должность.НаимДолжности"})]
     [MasterViewDefineAttribute("СотрудникE", "Должность", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "НаимДолжности")]
     [View("СотрудникL", new string[] {
@@ -48,9 +48,9 @@ namespace IIS.Probasem
         
         private string fФИО;
         
-        private System.DateTime fДатаРождения;
-        
         private int fТелефон;
+        
+        private System.DateTime fДатаРождения;
         
         private IIS.Probasem.Должность fДолжность;
         

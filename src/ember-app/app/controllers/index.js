@@ -22,37 +22,37 @@ export default Controller.extend({
             link: 'i-i-s-probasem-регистр-гостей-l',
             caption: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-регистр-гостей-l.caption'),
             title: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-регистр-гостей-l.title'),
-            icon: 'suitcase',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-probasem-карта-l',
             caption: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-карта-l.caption'),
             title: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-карта-l.title'),
-            icon: 'archive',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-probasem-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-сотрудник-l.title'),
-            icon: 'list',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-probasem-регистр-входа-l',
             caption: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-регистр-входа-l.caption'),
             title: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-регистр-входа-l.title'),
-            icon: 'tasks',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-probasem-должность-l',
             caption: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-должность-l.title'),
-            icon: 'briefcase',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-probasem-комната-l',
             caption: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-комната-l.caption'),
             title: i18n.t('forms.application.sitemap.probasem.i-i-s-probasem-комната-l.title'),
-            icon: 'tags',
+            icon: 'calendar',
             children: null
           }]
         }

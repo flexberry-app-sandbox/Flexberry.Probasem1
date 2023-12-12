@@ -58,9 +58,9 @@ CREATE TABLE "Сотрудник"
 
 	"ФИО" NVARCHAR2(255) NULL,
 
-	"ДатаРождения" DATE NULL,
-
 	"Телефон" NUMBER(10) NULL,
+
+	"ДатаРождения" DATE NULL,
 
 	"Должность" RAW(16) NOT NULL,
 

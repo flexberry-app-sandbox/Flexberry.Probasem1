@@ -83,7 +83,7 @@
               "attrs": [
                 {
                   "name": "кодКарты",
-                  "caption": "",
+                  "caption": "Номер карты",
                   "hidden": false,
                   "index": 5
                 }

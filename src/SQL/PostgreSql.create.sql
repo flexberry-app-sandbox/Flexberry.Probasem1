@@ -32,8 +32,8 @@ CREATE TABLE ВходСотрудника (
 CREATE TABLE Сотрудник (
  primaryKey UUID NOT NULL,
  ФИО VARCHAR(255) NULL,
- ДатаРождения TIMESTAMP(3) NULL,
  Телефон INT NULL,
+ ДатаРождения TIMESTAMP(3) NULL,
  Должность UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
