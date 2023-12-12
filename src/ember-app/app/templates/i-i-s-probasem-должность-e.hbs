@@ -1,0 +1,65 @@
+<h3 class="ui header">{{t "forms.i-i-s-probasem-должность-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кодДолжности
+      class=(if (v-get validationModel "кодДолжности" "isInvalid") "error")
+      label=(t "forms.i-i-s-probasem-должность-e.кодДолжности-caption")
+      data-test-i-i-s-probasem-должность-e-кодДолжности=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кодДолжности" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.наимДолжности
+      class=(if (v-get validationModel "наимДолжности" "isInvalid") "error")
+      label=(t "forms.i-i-s-probasem-должность-e.наимДолжности-caption")
+      data-test-i-i-s-probasem-должность-e-наимДолжности=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "наимДолжности" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-probasem-должность-e.карта-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.карта
+      displayAttributeName="кодКарты"
+      autocomplete=true
+      relationName="карта"
+      projection="КартаL"
+      title=(t "forms.i-i-s-probasem-должность-e.карта-caption")
+      readonly=readonly
+      componentName="картаLookup"
+      class=(if (v-get validationModel "карта" "isInvalid") "error")
+      data-test-i-i-s-probasem-должность-e-карта=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "карта" "message")}}
+  </div>
+</form>

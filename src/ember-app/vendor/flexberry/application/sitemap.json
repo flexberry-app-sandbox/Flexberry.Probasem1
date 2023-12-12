@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "Probasem",
+  "applicationTitle": "Probasem",
+  "items": [
+    {
+      "link": null,
+      "menuName": "probasem",
+      "caption": "Probasem",
+      "title": "Probasem",
+      "children": [
+        {
+          "link": "i-i-s-probasem-регистр-гостей-l",
+          "menuName": null,
+          "caption": "Регистр гостей",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probasem-карта-l",
+          "menuName": null,
+          "caption": "Карта",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probasem-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probasem-регистр-входа-l",
+          "menuName": null,
+          "caption": "Регистр входа",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probasem-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-probasem-комната-l",
+          "menuName": null,
+          "caption": "Комната",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
